@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Crowd Detection:History </title>
+<link rel="stylesheet" type="text/css" href="css/HistoryStyle.css"> 
+<script type = "text/javascript" src="js/historyPage.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+</head>
+
+<body onload="init_api()">
+<header>
+<div class="main">
+<div class="logo">
+<a href="index.html"><img src="images/unidad_logo.png"></a>
+</div>	
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="Live.html">Live Preview</a></li> 
+<li class="active"><a href="#">Captures</a></li>
+<li><a href="About.html">About</a></li>
+<li><a href="Contact.html">BUG?</a></li>
+</ul>
+
+</div>
+
+<div class="title">
+<h1>Feed Captures</h1>
+</div>
+<div class="button">
+	<a href="#" class="clearBtn" id="clearBtn" onclick="deleteImages()">Clear</a>
+</div>
+</header>
+<section><div class="captures" id="captures">
+	<!-- <source src=”rtsp://admin:Unidad123@192.168.2.103/udp/1″ type=”video/mp4″> -->
+	<!-- <source src="D:/old_work/WorkDrowsiness_Prediction/Data_Set/Drowsy_Person_1.mp4" type="video/mp4"> -->
+
+</div>
+</section>
+
+<div class="nothing" id="nothing">
+	<h2></h2>
+</div>
+
+</body>
+
+</html>

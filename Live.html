@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Crowd Detection:Live Preview </title>
+		<link rel="stylesheet" type="text/css" href="css/LiveStyle.css"> 
+		<script type = "text/javascript" src="js/analyse.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous">
+		</script>
+	</head>
+	<body onload="init_api()">
+		<header>
+			<div class="main">
+				<div class="logo">
+					<a href="index.html"><img src="images/unidad_logo.png"></a>
+				</div>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="active"><a href="#">Live Preview</a></li> 
+					<li><a href="History.html">Captures</a></li>
+					<li><a href="About.html">About</a></li>
+					<li><a href="Contact.html">BUG?</a></li>
+				</ul>
+			</div>	
+			<div class="title">
+				<h1>Live Preview</h1>
+			</div>
+		</header>
+		<div class="videoPlayer">
+			<!-- <video id="videoPlayer" src="http://localhost:8080/" autoplay width="720" height="480" controls muted></video> -->
+			<img id="videoPlayer" src="" width="720" height="480">
+		</div>
+		
+		<div class="button">
+			<a href="#" class="btn" id="btn1">Run</a>
+			<a href="#" class="btn" id="btn2">Capture</a>
+			<!-- <a href="#" class="btn" id="btn3">Stop</a> -->
+		</div> 
+		<div class="apiResponse" id="apiResponse">
+			<u>>
+				<l class="captureAlert" id="captureAlert"></l>
+			</u>
+			<h2 class="console" id="console">Console</h2>
+		</div>
+		<div class="canvasHolder" id="canvasHolder">
+			<h2 class="canvasHeading" id="canvasHeading"></h2>
+			<canvas class="canvasDisplay" id="canvasDisplay"></canvas>	
+		</div>
+		<form class="formCapture" id="formCapture" method="post">
+    		<input class="capture" type="text" id="capture" name="capture" />
+		</form>
+		<div id="message-log"></div>
+	</body>
+</html>

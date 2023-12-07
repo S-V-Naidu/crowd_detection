@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Crowd Detection:About </title>
+<link rel="stylesheet" type="text/css" href="css/AboutStyle.css"> 
+</head>
+
+<body>
+<header>
+<div class="main">
+<div class="logo">
+<a href="index.html"><img src="images/unidad_logo.png"></a>
+</div>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="Live.html">Live Preview</a></li> 
+<li><a href="History.html">Captures</a></li>
+<li class="active"><a href="#">About</a></li>
+<li><a href="Contact.html">BUG?</a></li>
+</ul>
+</div>
+</header>
+<div class="title">
+<h1>Crowd Detection</h1>
+</div>
+<div class="captures">
+	<img src="images/crowd_box.jpg">
+</div>
+<div class="content">
+	<ul>
+	<p>We happen to come across a lot of people walking around in a street. These set of people will be out of their house for various reasons and will commute the area either periodically or ocassionally. </p>
+	<br></br>
+	<p>Here we are mainly focused on finding out the individual count on the busy traffic area and manke an analysis as to how lively the area is and visualize the trends on a graph </p>
+	<br></br>
+	<p>For our project we are using an IP camera connected to our LAN to caputre real-time videos from a set view-point. The feed taken will be accessed by our jetson nano board which runs each frames through a prediction model and indentifies the faces in the crowd.</p>
+	<br></br>
+	<p>We later put a boundary across each detected faces and make the count of them at the particular frame.
+	There is a option to even capture a particular frame when viewing in the live preview to later have access to a particular instance of time.</p>
+	</ul>
+</div>
+</body>
+</html>
